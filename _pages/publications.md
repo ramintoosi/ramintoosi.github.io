@@ -13,7 +13,14 @@ author_profile: true
 
 <h2>Journal Articles</h2>
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.type == 'journal' %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 <h2>Conference Articles</h2>
+{% for post in site.publications reversed %}
+  {% if post.type == 'conference' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
