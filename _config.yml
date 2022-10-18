@@ -184,7 +184,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  talks:
+  projects:
     output: true
     permalink: /:collection/:path/
 
@@ -241,7 +241,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: talk
+      layout: projects
       author_profile: true
       share: true
 
