@@ -36,7 +36,7 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
+        {% elsif post.collection == 'projects' %}
           <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i>
             Associated with {{post.venue}}, {{ post.date | date: '%Y' }}
             {% if post.github %} [<a style="color: #52adc8" href=" {{ post.github }} "><u>GitHub</u></a>] {% endif %}
