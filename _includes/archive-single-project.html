@@ -19,9 +19,12 @@
 
       <p class="page__meta">
         Associated with {{post.venue}}, {{ post.date | date: '%Y' }}
-
       </p>
-
+    {% if post.prlang %}
+    <p class="page__meta">
+        Programming Language: {{post.prlang}}
+    </p>
+    {% endif %}
 
   </article>
 </div>

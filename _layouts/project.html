@@ -35,7 +35,7 @@ layout: default
         {% endif %}
 
             <p>Associated with <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-
+          {% if page.prlang %} <p> This project is writen in {{page.prlang}} </p> {% endif %}
 
 
         {% if page.citation and page.paperurl %}
