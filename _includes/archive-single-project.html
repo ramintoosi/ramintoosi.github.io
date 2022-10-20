@@ -14,7 +14,6 @@
 
     <h3 class="archive__item-title" itemprop="headline">
         {{ post.title }} [<a href="{{ base_path }}{{ post.url }}" rel="permalink">Read More</a>]
-        {% if post.github %} <a style="color: #52adc8" href=" {{ post.github }} "><i class="fab fa-fw fa-github fa-2x" aria-hidden="true"></i></a> {% endif %}
     </h3>
 
       <p class="page__meta">
@@ -23,6 +22,11 @@
     {% if post.prlang %}
     <p class="page__meta">
         Programming Language: {{post.prlang}}
+    </p>
+    {% endif %}
+    {% if post.github %}
+    <p class="page__meta">
+    <a style="color: #52adc8" href=" {{ post.github }} "><i class="fab fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
     </p>
     {% endif %}
 
