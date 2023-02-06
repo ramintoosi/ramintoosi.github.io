@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <audio src="resources/about.wav" id="audio"></audio>
-<button class="play-pause-button" onclick="play()" id="play">
+<button class="play-pause-button paused" onclick="play()" id="play">
     <i>P</i>
     <i>l</i>
     <i>a</i>
