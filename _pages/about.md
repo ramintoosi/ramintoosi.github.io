@@ -26,13 +26,13 @@ redirect_from:
             button.classList.remove('paused', 'playing');
             button.classList.add('paused');
         } else {
-            audio.play();
             if(button.classList.contains('paused')) {
+                audio.play();
                 button.classList.add('playing');
             }
         }
-        if(!button.classList.contains('paused')) {
-                    button.classList.add('paused');
+        if(!button.classList.contains('playing')) {
+                    button.classList.add('playing');
                 }
 }
 </script>
