@@ -17,7 +17,12 @@ redirect_from:
         var audio = document.getElementById('audio');
         if (audio.paused) {
             audio.play();
+            var but = document.getElementById("play");
+            element.classList.remove("fa-pause");
+            element.classList.remove("fa-play");
         }else{
+            element.classList.remove("fa-play");
+            element.classList.remove("fa-pause");
             audio.pause();
         }
     }
