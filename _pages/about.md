@@ -34,6 +34,24 @@ redirect_from:
         if(!button.classList.contains('paused')) {
                     button.classList.add('paused');
                 }
+    function play2() {
+        var audio = document.getElementById('audio2');
+        var button = document.getElementById("play2");
+        if(button.classList.contains('playing')) {
+            audio.pause();
+            button.classList.remove('paused', 'playing');
+            button.classList.add('paused');
+        } else {
+            if(button.classList.contains('paused')) {
+                audio.play();
+                button.classList.add('playing');
+            }
+        }
+        if(!button.classList.contains('paused')) {
+                    button.classList.add('paused');
+                }
+}
+
 }
 </script>
 
@@ -53,25 +71,6 @@ My Ph.D. thesis work focuses on the effects of spatial frequency in the IT corte
     <i>y</i>
     <i>use</i>
 </button>
-<script>
-    function play2() {
-        var audio = document.getElementById('audio2');
-        var button = document.getElementById("play2");
-        if(button.classList.contains('playing')) {
-            audio.pause();
-            button.classList.remove('paused', 'playing');
-            button.classList.add('paused');
-        } else {
-            if(button.classList.contains('paused')) {
-                audio.play();
-                button.classList.add('playing');
-            }
-        }
-        if(!button.classList.contains('paused')) {
-                    button.classList.add('paused');
-                }
-}
-</script>
 
 My love for learning and understanding the world around me began at a young age. As a child, I was always full of questions and eager to discover new things. This natural curiosity served as the foundation for my academic pursuits, which I took seriously from an early age. My dedication and hard work paid off, as I consistently ranked among the top students in my school and was encouraged by my teachers and peers to continue down an academic path.
 
