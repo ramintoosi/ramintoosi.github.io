@@ -11,7 +11,11 @@ redirect_from:
 
 <audio src="resources/about.wav" id="audio"></audio>
 <button class="play-pause-button" onclick="play()" id="play">
-    <i>Read</i>
+    <i>P</i>
+    <i>l</i>
+    <i>a</i>
+    <i>y</i>
+    <i>use</i>
 </button>
 <script>
     function play() {
