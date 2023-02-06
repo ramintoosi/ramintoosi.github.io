@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <audio src="resources/about.wav" id="audio"></audio>
-<button type="button" class="round-button" id="play" onclick="play()"><i class="fa fa-play fa-2x"></i></button>
+<button type="button" class="round-button" id="play" onclick="play()"><i class="fa fa-play"></i></button>
 
 <script>
     function play() {
