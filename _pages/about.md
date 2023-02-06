@@ -9,7 +9,19 @@ redirect_from:
   - /about.html
 ---
 
-(#Buttons){: .round-button}
+<audio src="${ song.url }" id="audio"></audio>
+<input type="button" class="round-button" id="play" onclick="play()"></i>
+
+<script>
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.pause();
+        }
+    }
+</script>
 
 I am Ramin Toosi, born in Minoodasht, a small city in the north part of Iran. I am a highly motivated Electrical Engineer with a B.Sc. degree in Electrical Engineering (communication division) from Shahid Beheshti University, Tehran, Iran and an M.Sc. degree in Electrical Engineering (system division) from the University of Tehran. Currently, I am pursuing a Ph.D. degree in Communications Systems at the Brain Computing Lab, University of Tehran.
 
