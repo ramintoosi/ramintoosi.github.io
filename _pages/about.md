@@ -21,8 +21,8 @@ redirect_from:
             but.classList.remove("fa-pause");
             but.classList.remove("fa-play");
         }else{
-            element.classList.remove("fa-play");
-            element.classList.remove("fa-pause");
+            but.classList.remove("fa-play");
+            but.classList.remove("fa-pause");
             audio.pause();
         }
     }
