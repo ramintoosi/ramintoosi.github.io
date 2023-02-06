@@ -45,6 +45,34 @@ My Ph.D. thesis work focuses on the effects of spatial frequency in the IT corte
 
 # Background
 
+<audio src="resources/background.mp3" id="audio2"></audio>
+<button class="play-pause-button paused" onclick="play2()" id="play2">
+    <i>P</i>
+    <i>l</i>
+    <i>a</i>
+    <i>y</i>
+    <i>use</i>
+</button>
+<script>
+    function play2() {
+        var audio = document.getElementById('audio2');
+        var button = document.getElementById("play2");
+        if(button.classList.contains('playing')) {
+            audio.pause();
+            button.classList.remove('paused', 'playing');
+            button.classList.add('paused');
+        } else {
+            if(button.classList.contains('paused')) {
+                audio.play();
+                button.classList.add('playing');
+            }
+        }
+        if(!button.classList.contains('paused')) {
+                    button.classList.add('paused');
+                }
+}
+</script>
+
 My love for learning and understanding the world around me began at a young age. As a child, I was always full of questions and eager to discover new things. This natural curiosity served as the foundation for my academic pursuits, which I took seriously from an early age. My dedication and hard work paid off, as I consistently ranked among the top students in my school and was encouraged by my teachers and peers to continue down an academic path.
 
 My choice to study electrical engineering at the University of Shahid Beheshti was driven by my love for mathematics. However, my interests shifted as I delved deeper into the field and discovered my passion for signal processing, specifically in the areas of image and video processing. The exposure to machine learning in my final year of my bachelor's degree sparked a new flame, leading me to continue my studies in this area during my master's program at the University of Tehran.
