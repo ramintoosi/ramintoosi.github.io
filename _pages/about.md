@@ -31,8 +31,8 @@ redirect_from:
                 button.classList.add('playing');
             }
         }
-        if(!button.classList.contains('playing')) {
-                    button.classList.add('playing');
+        if(!button.classList.contains('paused')) {
+                    button.classList.add('paused');
                 }
 }
 </script>
