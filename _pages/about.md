@@ -26,7 +26,10 @@ redirect_from:
             if(button.classList.contains('paused')) {
                 button.classList.add('playing');
             }
-    }
+        }
+        if(!button.classList.contains('paused')) {
+                    button.classList.add('paused');
+                }
 }
 </script>
 
