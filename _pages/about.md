@@ -9,8 +9,8 @@ redirect_from:
   - /about.html
 ---
 
-<audio src="${ song.url }" id="audio"></audio>
-<input type="button" class="round-button" id="play" onclick="play()"></i>
+<audio src="resources/about.wav" id="audio"></audio>
+<input type="button" class="round-button" id="play" onclick="play()"><i class="fa fa-play fa-2x"></i>
 
 <script>
     function play() {
