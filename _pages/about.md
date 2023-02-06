@@ -10,41 +10,22 @@ redirect_from:
 ---
 
 <audio src="resources/about.wav" id="audio"></audio>
-<button type="button" class="round-button" onclick="play()"><i id="play" class="fa fa-play"></i></button>
-<button class="play-pause-button">
+<button class="play-pause-button" onclick="play()" id="play">
     <i>Read</i>
 </button>
 <script>
-
-    document.querySelectorAll('.play-pause-button').forEach(button => {
-    button.addEventListener('click', e => {
+    function play() {
+        var audio = document.getElementById('audio');
+        var button = document.getElementById("play");
         if(button.classList.contains('playing')) {
+            audio.pause();
             button.classList.remove('paused', 'playing');
             button.classList.add('paused');
         } else {
+            audio.play();
             if(button.classList.contains('paused')) {
                 button.classList.add('playing');
             }
-        }
-        if(!button.classList.contains('paused')) {
-            button.classList.add('paused');
-        }
-    });
-});
-
-    
-    function play() {
-        var audio = document.getElementById('audio');
-        var but = document.getElementById("play");
-        if (audio.paused) {
-            audio.play();
-            but.classList.remove("fa-pause");
-            but.classList.remove("fa-play");
-        }else{
-            but.classList.remove("fa-play");
-            but.classList.remove("fa-pause");
-            audio.pause();
-        }
     }
 </script>
 
