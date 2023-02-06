@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-<audio src="resources/about.wav" id="audio"></audio>
+<audio src="resources/about.mp3" id="audio"></audio>
 <button class="play-pause-button paused" onclick="play()" id="play">
     <i>P</i>
     <i>l</i>
@@ -34,6 +34,7 @@ redirect_from:
         if(!button.classList.contains('paused')) {
                     button.classList.add('paused');
                 }
+
     function play2() {
         var audio = document.getElementById('audio2');
         var button = document.getElementById("play2");
