@@ -34,8 +34,9 @@ redirect_from:
         if(!button.classList.contains('paused')) {
                     button.classList.add('paused');
                 }
+}
 
-    function play2() {
+function play2() {
         var audio = document.getElementById('audio2');
         var button = document.getElementById("play2");
         if(button.classList.contains('playing')) {
@@ -53,7 +54,6 @@ redirect_from:
                 }
 }
 
-}
 </script>
 
 I am Ramin Toosi, born in Minoodasht, a small city in the north part of Iran. I am a highly motivated Electrical Engineer with a B.Sc. degree in Electrical Engineering (communication division) from Shahid Beheshti University, Tehran, Iran and an M.Sc. degree in Electrical Engineering (system division) from the University of Tehran. Currently, I am pursuing a Ph.D. degree in Communications Systems at the Brain Computing Lab, University of Tehran.
