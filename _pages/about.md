@@ -15,11 +15,11 @@ redirect_from:
 <script>
     function play() {
         var audio = document.getElementById('audio');
+        var but = document.getElementById("play");
         if (audio.paused) {
             audio.play();
-            var but = document.getElementById("play");
-            element.classList.remove("fa-pause");
-            element.classList.remove("fa-play");
+            but.classList.remove("fa-pause");
+            but.classList.remove("fa-play");
         }else{
             element.classList.remove("fa-play");
             element.classList.remove("fa-pause");
