@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-<audio src="resources/about.mp3" id="audio"></audio>
+<audio src="resources/about.wav" id="audio"></audio>
 <button class="play-pause-button paused" onclick="play()" id="play">
     <i>P</i>
     <i>l</i>
@@ -35,25 +35,6 @@ redirect_from:
                     button.classList.add('paused');
                 }
 }
-
-function play2() {
-        var audio = document.getElementById('audio2');
-        var button = document.getElementById("play2");
-        if(button.classList.contains('playing')) {
-            audio.pause();
-            button.classList.remove('paused', 'playing');
-            button.classList.add('paused');
-        } else {
-            if(button.classList.contains('paused')) {
-                audio.play();
-                button.classList.add('playing');
-            }
-        }
-        if(!button.classList.contains('paused')) {
-                    button.classList.add('paused');
-                }
-}
-
 </script>
 
 I am Ramin Toosi, born in Minoodasht, a small city in the north part of Iran. I am a highly motivated Electrical Engineer with a B.Sc. degree in Electrical Engineering (communication division) from Shahid Beheshti University, Tehran, Iran and an M.Sc. degree in Electrical Engineering (system division) from the University of Tehran. Currently, I am pursuing a Ph.D. degree in Communications Systems at the Brain Computing Lab, University of Tehran.
@@ -72,6 +53,25 @@ My Ph.D. thesis work focuses on the effects of spatial frequency in the IT corte
     <i>y</i>
     <i>use</i>
 </button>
+<script>
+    function play2() {
+        var audio = document.getElementById('audio2');
+        var button = document.getElementById("play2");
+        if(button.classList.contains('playing')) {
+            audio.pause();
+            button.classList.remove('paused', 'playing');
+            button.classList.add('paused');
+        } else {
+            if(button.classList.contains('paused')) {
+                audio.play();
+                button.classList.add('playing');
+            }
+        }
+        if(!button.classList.contains('paused')) {
+                    button.classList.add('paused');
+                }
+}
+</script>
 
 My love for learning and understanding the world around me began at a young age. As a child, I was always full of questions and eager to discover new things. This natural curiosity served as the foundation for my academic pursuits, which I took seriously from an early age. My dedication and hard work paid off, as I consistently ranked among the top students in my school and was encouraged by my teachers and peers to continue down an academic path.
 
