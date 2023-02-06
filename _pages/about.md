@@ -8,6 +8,16 @@ redirect_from:
   - /about.html
 ---
 
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+<input type="button" value="PLAY" onclick="play()">
+<audio id="audio" src="resources/about.wav"></audio>
+
 I am Ramin Toosi, born in Minoodasht, a small city in the north part of Iran. I am a highly motivated Electrical Engineer with a B.Sc. degree in Electrical Engineering (communication division) from Shahid Beheshti University, Tehran, Iran and an M.Sc. degree in Electrical Engineering (system division) from the University of Tehran. Currently, I am pursuing a Ph.D. degree in Communications Systems at the Brain Computing Lab, University of Tehran.
 
 My fields of interest cover a range of cutting-edge technologies, including Machine Learning, Deep Learning, Signal Processing, Multimedia Security, Image and Video Analysis, and Computational Neuroscience. As the Chief Technology Officer at Avir company, I bring my passion and expertise in these areas to my work every day.
