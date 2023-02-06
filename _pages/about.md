@@ -1,7 +1,7 @@
 ---
 permalink: /
 
-[//]: # (title: "About Me")
+title: "About Me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-# About Me [this](#Buttons){: .btn}
+[this](#Buttons){: .round-button}
 
 I am Ramin Toosi, born in Minoodasht, a small city in the north part of Iran. I am a highly motivated Electrical Engineer with a B.Sc. degree in Electrical Engineering (communication division) from Shahid Beheshti University, Tehran, Iran and an M.Sc. degree in Electrical Engineering (system division) from the University of Tehran. Currently, I am pursuing a Ph.D. degree in Communications Systems at the Brain Computing Lab, University of Tehran.
 
