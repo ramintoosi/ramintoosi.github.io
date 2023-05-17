@@ -9,6 +9,7 @@ author_profile: true
     table {
         width: 100%;
         border: 0px;
+        font-size: 30px;
     }
 </style>
 
