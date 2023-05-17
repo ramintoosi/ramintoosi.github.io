@@ -10,7 +10,7 @@ author_profile: true
         width: 100%;
         font-size: 20px;
         font-weight: bold;
-        border: none;
+        background-color: $light-gray;
     }
 </style>
 
@@ -18,14 +18,38 @@ author_profile: true
 | PhD | University of Tehran | 2016 - Now |
 
 
-<h3>
-Telecommunication Engineering, GPA: 17.74
-</h3>
+<h4>
+Telecommunication Engineering
+</h4>
 
-<h3>
+<h4>
 GPA: 17.74
-</h3>
+</h4>
 
 <h3>Thesis:</h3>
 Spatial frequency (SF) is shown to be a critical characteristic in object perception. However, there exists a lack of understanding of how the SF is represented in the brain, specifically in higher areas in the visual system hierarchy. To address this issue, we conducted extracellular recordings from macaque monkeys to investigate the representation of SF in the inferior temporal (IT) cortex. Furthermore, we investigated the impact of SF on complex object representation.
 
+| M.Sc. | University of Tehran | 2014 - 2016 |
+
+<h4>
+Telecommunication Engineering
+</h4>
+
+<h4>
+GPA: 17.18
+</h4>
+
+<h3>Thesis: Combination of Classifiers Based on Information Theoretic Models</h3>
+
+
+| B.Sc. | Shahid Beheshti University | 2010 - 2014 |
+
+<h4>
+Telecommunication Engineering
+</h4>
+
+<h4>
+GPA: 18.25
+</h4>
+
+<h3>Thesis: Text Detection in The Wild</h3>
