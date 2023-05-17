@@ -13,21 +13,11 @@ author_profile: true
 </style>
 
 
-| P.h.D | University of Tehran | 2016 - Now |
+| PhD | University of Tehran | 2016 - Now |
 
-
-| Header1 | Header2 | Header3 |
-|:--------|:--------|:--------|
-| cell1   | cell2   | cell3   |
-
-
-| Header1 | Header2 | Header3 |
-|:--------|:--------|:--------|
 
 <h3>
-Telecommunication Engineering
-
-GPA: 17.74
+Telecommunication Engineering, GPA: 17.74
 </h3>
 
 <h3>Thesis:</h3>
