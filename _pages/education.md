@@ -12,10 +12,18 @@ author_profile: true
     }
 </style>
 
-<h1>
+
 | P.h.D | University of Tehran | 2016 - Now |
 
-</h1>
+
+| Header1 | Header2 | Header3 |
+|:--------|:--------|:--------|
+| cell1   | cell2   | cell3   |
+
+
+| Header1 | Header2 | Header3 |
+|:--------|:--------|:--------|
+
 <h3>
 GPA: 17.74
 </h3>
