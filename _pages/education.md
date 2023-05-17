@@ -9,6 +9,8 @@ author_profile: true
     table {
         width: 100%;
         font-size: 20px;
+        font-weight: bold;
+        border: none;
     }
 </style>
 
@@ -18,6 +20,10 @@ author_profile: true
 
 <h3>
 Telecommunication Engineering, GPA: 17.74
+</h3>
+
+<h3>
+GPA: 17.74
 </h3>
 
 <h3>Thesis:</h3>
