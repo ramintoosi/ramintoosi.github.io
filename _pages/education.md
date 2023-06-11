@@ -12,6 +12,11 @@ author_profile: true
         font-weight: bold;
         background-color: $light-gray;
     }
+
+    table tbody tr td:nth-child(1){width:25%;}
+    table tbody tr td:nth-child(2){width:50%;}
+    table tbody tr td:nth-child(3){width:25%;}
+
 </style>
 
 
