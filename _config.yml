@@ -190,6 +190,9 @@ collections:
   education:
     output: true
     permalink: /:collection/:path/
+  skills:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -248,6 +251,15 @@ defaults:
       author_profile: true
       share: true
       comment: true
+
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: single
+      author_profile: true
+      share: true
+
   # Education
   - scope:
       path: ""
