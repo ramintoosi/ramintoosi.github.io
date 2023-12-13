@@ -9,6 +9,7 @@ author_profile: true
 .circle-container {
     display: flex;
     align-items: center;
+    position: relative; /* This ensures the flames are positioned relative to the container */
 }
 
 .circle {
@@ -21,7 +22,8 @@ author_profile: true
     align-items: center;
     transition: transform 0.3s ease; /* Smooth transition for enlarging */
     position: relative; /* Needed for the flame effect */
-    overflow: hidden; /* Ensures flame effect stays within the circle */
+    overflow: visible; /* Allows flame effect to show outside the circle */
+    z-index: 2; /* Ensures the circle is above the flames */
 }
 
 .circle:hover {
@@ -32,32 +34,40 @@ author_profile: true
     margin-left: 10px; /* Spacing between circle and text */
 }
 
-/* Flame effect (you can be creative here) */
-.circle::after {
-    content: '';
+/* Flame elements */
+.flame {
     position: absolute;
-    top: -20px; /* Positioning of the flame effect */
-    left: 10px;
-    width: 70px;
-    height: 70px;
+    width: 20px;
+    height: 20px;
     background: linear-gradient(orange, red); /* Gradient for flame effect */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
-    opacity: 0.7; /* Adjust for the desired intensity */
-    transition: opacity 0.3s ease; /* Smooth transition for the flame effect */
+    opacity: 0; /* Start with flames invisible */
+    animation: flicker 1.5s infinite; /* Flame flicker animation */
 }
 
-.circle:hover::after {
-    opacity: 1; /* Flame effect becomes fully visible on hover */
+/* Positioning flames around the circle */
+.circle:hover .flame {
+    opacity: 1; /* Show flames on hover */
+}
+
+/* You can add multiple flames with different classes or IDs, positioned around the circle with different animations */
+
+/* Keyframes for flame flicker effect */
+@keyframes flicker {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
 }
 
 </style>
 
-The number in each skill shows the years of experience in that skill.
-
-## Machine Learning
-
 <div class="circle-container">
     <div class="circle">7+</div>
     <div class="skill-name">Deep Learning</div>
+    <div class="flame" style="top: 0; left: 50%;"></div>
+    <!-- Repeat the above line, adjusting the position for each flame -->
+    <!-- Add as many .flame divs as needed, positioned around the circle -->
 </div>
-
