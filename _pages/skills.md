@@ -6,68 +6,89 @@ author_profile: true
 ---
 
 <style>
-.circle-container {
-    display: flex;
-    align-items: center;
-    position: relative; /* This ensures the flames are positioned relative to the container */
+  $cirle-width: 95vmin;
+
+// You can play with these for a little variation
+$shadow-depth: $cirle-width * .125;
+$shadow-depth-hover-ratio: 2;
+$shadow-blur: $shadow-depth * 0;
+$shadow-spread: $shadow-depth * 0;
+
+$y-offset: $shadow-depth * .5;
+$x-offset: $y-offset * 1.7320508076; // √3
+$y-offset-hover: $y-offset * $shadow-depth-hover-ratio;
+$x-offset-hover: $x-offset * $shadow-depth-hover-ratio;
+
+$red:    rgba(255,   0,   0, .45);
+$orange: rgba(253, 127,  11, .54);
+$yellow: rgba(235, 255,   0, .54);
+$green:  rgba( 22, 243,   3, .55);
+$blue:   rgba(  0, 133, 255, .53);
+$purple: rgba(190,  11, 224, .55);
+
+* {
+  box-sizing: border-box;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
-    background-color: #f0f0f0; /* Light grey background */
-    border-radius: 50%; /* Makes it a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease; /* Smooth transition for enlarging */
-    position: relative; /* Needed for the flame effect */
-    overflow: visible; /* Allows flame effect to show outside the circle */
-    z-index: 2; /* Ensures the circle is above the flames */
+  position: relative;
+  width: $cirle-width;
+  border-radius: 50%;
+  transition: all .3s ease;
+  box-shadow:
+    inset $x-offset (-$y-offset) $shadow-blur $shadow-spread $red,
+    inset (-$x-offset) (-$y-offset) $shadow-blur $shadow-spread $yellow,
+    inset 0 $shadow-depth $shadow-blur $shadow-spread $blue,
+    inset (-$x-offset) $y-offset $shadow-blur $shadow-spread $green,
+    inset $x-offset $y-offset $shadow-blur $shadow-spread $purple,
+    inset 0 (-$shadow-depth) $shadow-blur $shadow-spread $orange,
+  ;
+  animation: spin 120s linear infinite;
+  
+  &:hover {
+    box-shadow:
+      inset $x-offset-hover (-$y-offset-hover) $shadow-blur $shadow-spread $red,
+      inset (-$x-offset-hover) (-$y-offset-hover) $shadow-blur $shadow-spread $yellow,
+      inset 0 ($shadow-depth * $shadow-depth-hover-ratio) $shadow-blur $shadow-spread $blue,
+      inset (-$x-offset-hover) $y-offset-hover $shadow-blur $shadow-spread $green,
+      inset $x-offset-hover $y-offset-hover $shadow-blur $shadow-spread $purple,
+      inset 0 (-$shadow-depth * $shadow-depth-hover-ratio) $shadow-blur $shadow-spread $orange,
+    ;
+  }
+  
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
 }
 
-.circle:hover {
-    transform: scale(1.2); /* Enlarges the circle by 20% on hover */
+@keyframes counter-spin {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
 
-.skill-name {
-    margin-left: 10px; /* Spacing between circle and text */
+.circle-text {
+  position: absolute;
+	font-size: 500%;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  text-align: center;
+  animation: counter-spin 120s linear infinite;
+  // Additional styling as needed
 }
 
-/* Flame elements */
-.flame {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(orange, red); /* Gradient for flame effect */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
-    opacity: 0; /* Start with flames invisible */
-    animation: flicker 1.5s infinite; /* Flame flicker animation */
-}
-
-/* Positioning flames around the circle */
-.circle:hover .flame {
-    opacity: 1; /* Show flames on hover */
-}
-
-/* You can add multiple flames with different classes or IDs, positioned around the circle with different animations */
-
-/* Keyframes for flame flicker effect */
-@keyframes flicker {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-}
 
 </style>
 
-<div class="circle-container">
-    <div class="circle">7+</div>
-    <div class="skill-name">Deep Learning</div>
-    <div class="flame" style="top: 0; left: 50%;"></div>
-    <!-- Repeat the above line, adjusting the position for each flame -->
-    <!-- Add as many .flame divs as needed, positioned around the circle -->
+<div class="circle">
+    <span class="circle-text">7+</span>
 </div>
+<span>Deep Learning</span>
