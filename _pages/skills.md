@@ -22,17 +22,17 @@ author_profile: true
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #5555ff;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background-color: white;
+  background-color: transparent;
   border: 2px solid #5555ff;
 }
 
 p {
-  color: #333;
-  font-size: 1em;
+  color: #666;
+  font-size: 1.6em;
   margin: 0;
 }
 
