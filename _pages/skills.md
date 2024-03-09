@@ -25,3 +25,7 @@ author_profile: true
 
 # Frontend
 **PyQt** (small projects), **HTML&CSS** (familiar)
+
+| Fields of Interest | **Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar) |
+|:-------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
