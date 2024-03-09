@@ -51,4 +51,4 @@ author_profile: true
       <td><strong>PyQt</strong> (small projects), <strong>HTML&amp;CSS</strong> (familiar)</td>
    </tr>
 </tbody>
-</table
+</table>
