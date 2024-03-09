@@ -10,6 +10,9 @@ author_profile: true
         width: 100%;
         font-size: 20px;
         background-color: $light-gray;
+        border:1;
+        frame=hsides;
+        rules:rows;
     }
 
     table tbody tr td:nth-child(1){width:25%;}
