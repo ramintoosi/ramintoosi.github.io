@@ -5,6 +5,17 @@ permalink: /skills/
 author_profile: true
 ---
 
+<style>
+    table {
+        width: 100%;
+        background-color: $light-gray;
+    }
+
+    table tbody tr td:nth-child(1){width:25%;}
+    table tbody tr td:nth-child(2){width:75%;}
+
+</style>
+
 # Fields of Interest
 **Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar)
 
@@ -27,4 +38,5 @@ author_profile: true
 **PyQt** (small projects), **HTML&CSS** (familiar)
 
 | Fields of Interest | **Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar) |
+| Programming Languages | **Python** (7+ years), **MATLAB** (10+ years), **C++** (small projects) |
 
