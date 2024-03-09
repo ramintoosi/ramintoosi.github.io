@@ -8,6 +8,7 @@ author_profile: true
 <style>
     table {
         width: 100%;
+        font-size: 20px;
         background-color: $light-gray;
     }
 
@@ -16,27 +17,10 @@ author_profile: true
 
 </style>
 
-# Fields of Interest
-**Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar)
-
-# Programming Languages
-**Python** (7+ years), **MATLAB** (10+ years), **C++** (small projects)
-
-# Programming Skills
-**Git**, **Test Driven Development** (1+ years), **Redis**, **CI/CD** (familiar)
-
-# ML Frameworks
-**PyTorch** (6+ years), **TensorFlow** (small projects), **Scikit-Learn** (8+ years)
-
-# Deep Learning
-**Classification**, **Segmentation**, **Detection**, **Generative AI** (familiar), **Quantization**, **Pruning** (familiar), **NAS** (familiar), **Active Learning** (familiar), **Weak Supervision** (familiar), **Model Serving** (3+ years)
-
-# Backend Frameworks
-**Flask** (small projects), **FastAPI** (small projects)
-
-# Frontend
-**PyQt** (small projects), **HTML&CSS** (familiar)
-
 | Fields of Interest | **Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar) |
 | Programming Languages | **Python** (7+ years), **MATLAB** (10+ years), **C++** (small projects) |
-
+| Programming Skills | **Git**, **Test Driven Development** (1+ years), **Redis**, **CI/CD** (familiar) |
+| ML Frameworks | **PyTorch** (6+ years), **TensorFlow** (small projects), **Scikit-Learn** (8+ years) |
+| Deep Learning | **Classification**, **Segmentation**, **Detection**, **Generative AI** (familiar), **Quantization**, **Pruning** (familiar), **NAS** (familiar), **Active Learning** (familiar), **Weak Supervision** (familiar), **Model Serving** (3+ years) |
+| Backend Frameworks | **Flask** (small projects), **FastAPI** (small projects) |
+| Frontend | **PyQt** (small projects), **HTML&CSS** (familiar) |
