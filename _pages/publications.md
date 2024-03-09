@@ -9,7 +9,7 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 
 {% include base_path %}
 
-<h2>In Preparation</h2>
+<h2>Under Review</h2>
 {% for post in site.publications reversed %}
   {% if post.type == 'arxiv' %}
     {% include archive-single.html %}
