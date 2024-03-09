@@ -20,10 +20,35 @@ author_profile: true
 
 </style>
 
-| Fields of Interest | **Machine Learning** (10+ years), **Deep learning** (7+ years), **Signal Processing**, **Backend** (small projects), **Computational Neuroscience** (4+ years), **MLOps** (familiar) |
-| Programming Languages | **Python** (7+ years), **MATLAB** (10+ years), **C++** (small projects) |
-| Programming Skills | **Git**, **Test Driven Development** (1+ years), **Redis**, **CI/CD** (familiar) |
-| ML Frameworks | **PyTorch** (6+ years), **TensorFlow** (small projects), **Scikit-Learn** (8+ years) |
-| Deep Learning | **Classification**, **Segmentation**, **Detection**, **Generative AI** (familiar), **Quantization**, **Pruning** (familiar), **NAS** (familiar), **Active Learning** (familiar), **Weak Supervision** (familiar), **Model Serving** (3+ years) |
-| Backend Frameworks | **Flask** (small projects), **FastAPI** (small projects) |
-| Frontend | **PyQt** (small projects), **HTML&CSS** (familiar) |
+<table border=1 frame=hsides rules=rows>
+<tbody>
+   <tr>
+      <td>Fields of Interest</td>
+      <td><strong>Machine Learning</strong> (10+ years), <strong>Deep learning</strong> (7+ years), <strong>Signal Processing</strong>, <strong>Backend</strong> (small projects), <strong>Computational Neuroscience</strong> (4+ years), <strong>MLOps</strong> (familiar)</td>
+   </tr>
+   <tr>
+      <td>Programming Languages</td>
+      <td><strong>Python</strong> (7+ years), <strong>MATLAB</strong> (10+ years), <strong>C++</strong> (small projects)</td>
+   </tr>
+   <tr>
+      <td>Programming Skills</td>
+      <td><strong>Git</strong>, <strong>Test Driven Development</strong> (1+ years), <strong>Redis</strong>, <strong>CI/CD</strong> (familiar)</td>
+   </tr>
+   <tr>
+      <td>ML Frameworks</td>
+      <td><strong>PyTorch</strong> (6+ years), <strong>TensorFlow</strong> (small projects), <strong>Scikit-Learn</strong> (8+ years)</td>
+   </tr>
+   <tr>
+      <td>Deep Learning</td>
+      <td><strong>Classification</strong>, <strong>Segmentation</strong>, <strong>Detection</strong>, <strong>Generative AI</strong> (familiar), <strong>Quantization</strong>, <strong>Pruning</strong> (familiar), <strong>NAS</strong> (familiar), <strong>Active Learning</strong> (familiar), <strong>Weak Supervision</strong> (familiar), <strong>Model Serving</strong> (3+ years)</td>
+   </tr>
+   <tr>
+      <td>Backend Frameworks</td>
+      <td><strong>Flask</strong> (small projects), <strong>FastAPI</strong> (small projects)</td>
+   </tr>
+   <tr>
+      <td>Frontend</td>
+      <td><strong>PyQt</strong> (small projects), <strong>HTML&amp;CSS</strong> (familiar)</td>
+   </tr>
+</tbody>
+</table
