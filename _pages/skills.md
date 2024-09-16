@@ -28,7 +28,7 @@ author_profile: true
    </tr>
    <tr>
       <td>Programming Languages</td>
-      <td><strong>Python</strong> (7+ years), <strong>MATLAB</strong> (10+ years), <strong>C++</strong> (small projects)</td>
+      <td><strong>Python</strong> (7+ years), <strong>Rust</strong> (junior) <strong>MATLAB</strong> (10+ years), <strong>C++</strong> (small projects)</td>
    </tr>
    <tr>
       <td>Programming Skills</td>
@@ -52,3 +52,6 @@ author_profile: true
    </tr>
 </tbody>
 </table>
+
+
+### Updated: September 2024
