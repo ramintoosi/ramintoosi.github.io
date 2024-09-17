@@ -248,11 +248,10 @@
 /* project card
    Pagination
    ========================================================================== */
-
 /* Main container for two columns */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures two columns on wider screens */
+  grid-template-columns: repeat(2, 1fr); /* Forces exactly two columns */
   gap: 20px; /* Space between the cards */
   margin-top: 20px;
 }
@@ -275,7 +274,7 @@
 }
 
 .project-card__title {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -296,4 +295,11 @@
 
 .project-card__icon i {
   font-size: 1.5em;
+}
+
+/* Responsive behavior: single column for smaller screens */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
 }
