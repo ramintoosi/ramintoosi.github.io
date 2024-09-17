@@ -4,9 +4,8 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
-
+<div class="projects-container">
 {% for post in site.projects reversed %}
-    <div class="projects-container">
-        {% include archive-single-project.html %}
-    </div>
+    {% include archive-single-project.html %}
 {% endfor %}
+</div>

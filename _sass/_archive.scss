@@ -252,7 +252,7 @@
 /* Main container for two columns */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures two columns on wider screens */
   gap: 20px; /* Space between the cards */
   margin-top: 20px;
 }
@@ -294,7 +294,6 @@
   color: #52adc8;
 }
 
-/* Make icons a little smaller on cards */
 .project-card__icon i {
   font-size: 1.5em;
 }
