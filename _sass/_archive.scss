@@ -243,3 +243,58 @@
     }
   }
 }
+
+
+/* project card
+   Pagination
+   ========================================================================== */
+
+/* Main container for two columns */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px;
+}
+
+/* Card styling */
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card__item {
+  padding: 20px;
+}
+
+.project-card__title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.project-card__meta {
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.project-card__links {
+  margin-top: 10px;
+}
+
+.project-card__icon {
+  margin-right: 10px;
+  color: #52adc8;
+}
+
+/* Make icons a little smaller on cards */
+.project-card__icon i {
+  font-size: 1.5em;
+}
