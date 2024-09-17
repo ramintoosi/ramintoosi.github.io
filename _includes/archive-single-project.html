@@ -41,7 +41,7 @@
   <article class="project-card__item" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="project-card__content">
       <h3 class="project-card__title" itemprop="headline">
-        {{ post.title }} [<a href="{{ base_path }}{{ post.url }}" rel="permalink">Read More</a>]
+        {{ post.title }}
       </h3>
       <p class="project-card__meta">
         <strong> {{ post.date | date: '%Y' }} </strong>
@@ -61,6 +61,7 @@
           <a class="project-card__icon" href="{{ post.paper }}"><i class="fas fa-fw fa-file fa-2x"></i></a>
         {% endif %}
       </p>
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="read-more-button">Read More</a>
     </div>
   </article>
 </div>

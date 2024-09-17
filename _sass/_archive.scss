@@ -263,7 +263,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 50px; /* Add some padding at the bottom to make space for the button */
 }
+
 
 .project-card:hover {
   transform: translateY(-10px);
@@ -302,4 +305,22 @@
   .projects-container {
     grid-template-columns: 1fr; /* Single column on smaller screens */
   }
+}
+
+/* Style for the Read More button */
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #52adc8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #3a92a6;
 }
