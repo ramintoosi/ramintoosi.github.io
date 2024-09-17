@@ -44,7 +44,9 @@
         {{ post.title }} [<a href="{{ base_path }}{{ post.url }}" rel="permalink">Read More</a>]
       </h3>
       <p class="project-card__meta">
-        Associated with {{post.venue}}, {{ post.date | date: '%Y' }}
+        <strong> {{ post.date | date: '%Y' }} </strong>
+        <br>
+        Associated with {{post.venue}}
       </p>
       {% if post.prlang %}
       <p class="project-card__meta">
