@@ -20,7 +20,7 @@ author_profile: true
 </style>
 
 
-| PhD   | University of Tehran       | 2016 - Now |
+| PhD   | University of Tehran       | 2016 - 2024 |
 
 
 <h3>
