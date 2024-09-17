@@ -5,18 +5,8 @@ permalink: /projects/
 author_profile: true
 ---
 
-[//]: # ({% for post in site.projects reversed %})
-
-[//]: # ()
-[//]: # (  {% include archive-single-project.html %})
-
-[//]: # ()
-[//]: # ({% endfor %})
-
-
-[//]: # (<div class="projects-container">)
-  {% for post in site.projects reversed %}
-    {% include archive-single-project.html %}
-  {% endfor %}
-
-[//]: # (</div>)
+{% for post in site.projects reversed %}
+    <div class="projects-container">
+        {% include archive-single-project.html %}
+    </div>
+{% endfor %}
