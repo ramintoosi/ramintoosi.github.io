@@ -14,8 +14,9 @@ author_profile: true
 [//]: # ({% endfor %})
 
 
-<div class="projects-container">
+[//]: # (<div class="projects-container">)
   {% for post in site.projects reversed %}
     {% include archive-single-project.html %}
   {% endfor %}
-</div>
+
+[//]: # (</div>)
