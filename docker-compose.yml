@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4000:4000"    # Jekyll
+      - "35729:35729"  # LiveReload
+    volumes:
+      - .:/srv/jekyll
+    stdin_open: true
+    tty: true

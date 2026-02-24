@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run the site locally. One-time: bundle install
+cd "$(dirname "$0")"
+bundle exec jekyll serve
