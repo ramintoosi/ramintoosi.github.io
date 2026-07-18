@@ -5,7 +5,7 @@ permalink: /skills/
 author_profile: true
 ---
 
-I am an ML engineer with a strong academic foundation and proven industrial experience. I hold a B.Sc. and an M.Sc. in Electrical Engineering and a Ph.D. in Communications Systems, with deep expertise in Machine Learning, Deep Learning, and Computational Neuroscience. As Chief Technology Officer at Avir, I lead teams to build and ship AI-based solutions. I work in a proactive, collaborative way and keep expanding my skills; I take ownership and aim to deliver consistently.
+I am an ML engineer with a strong academic foundation and proven industrial experience. I hold a B.Sc. and an M.Sc. in Electrical Engineering and a Ph.D. in Communications Systems, with deep expertise in Machine Learning, Deep Learning, and Computational Neuroscience. As an ML engineer, I build and ship AI-based solutions. I work in a proactive, collaborative way and keep expanding my skills; I take ownership and aim to deliver consistently.
 
 <style>
     table {
