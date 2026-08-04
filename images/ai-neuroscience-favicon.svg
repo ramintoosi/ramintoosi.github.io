@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI neuroscience icon">
+  <rect width="64" height="64" rx="14" fill="#f7f9fa"/>
+  <path d="M26 14c-8.5 0-15 6.8-15 15.4 0 5.1 2.2 8.8 5.7 11.4 1.8 1.3 2.9 3.3 3 5.5v1.7h11.3V14H26z" fill="#52adc8" opacity="0.2"/>
+  <path d="M38 14c8.5 0 15 6.8 15 15.4 0 5.1-2.2 8.8-5.7 11.4-1.8 1.3-2.9 3.3-3 5.5v1.7H33V14h5z" fill="#52adc8" opacity="0.2"/>
+  <path d="M26 14c-8.5 0-15 6.8-15 15.4 0 5.1 2.2 8.8 5.7 11.4 1.8 1.3 2.9 3.3 3 5.5v1.7M38 14c8.5 0 15 6.8 15 15.4 0 5.1-2.2 8.8-5.7 11.4-1.8 1.3-2.9 3.3-3 5.5v1.7M24 48h16M27 53h10" fill="none" stroke="#1f2933" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <circle cx="23" cy="24" r="3.2" fill="#52adc8"/>
+  <circle cx="32" cy="20" r="3.2" fill="#52adc8"/>
+  <circle cx="41" cy="26" r="3.2" fill="#52adc8"/>
+  <circle cx="25" cy="35" r="3.2" fill="#52adc8"/>
+  <circle cx="39" cy="37" r="3.2" fill="#52adc8"/>
+  <path d="M23 24l9-4 9 6M23 24l2 11M25 35l14 2" fill="none" stroke="#52adc8" stroke-linecap="round" stroke-width="2.8"/>
+</svg>
