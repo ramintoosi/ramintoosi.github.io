@@ -49,6 +49,22 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% if page.keywords %}
+          <div class="project-page-tags">
+            <h3>Tags</h3>
+            {% assign kws = page.keywords | split: ',' %}
+            <div class="project-page-tags-list">
+              {% for kw in kws limit: 10 %}
+                {% assign clean_kw = kw | strip %}
+                {% if clean_kw != '' %}
+                  <span class="project-page-tag">{{ clean_kw }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

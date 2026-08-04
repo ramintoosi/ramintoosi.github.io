@@ -48,20 +48,51 @@
         <br>
         Associated with {{post.venue}}
       </p>
-      {% if post.prlang %}
-      <p class="project-card__meta">
-        {{post.prlang}}
-      </p>
+      {% if post.card_tags or post.prlang or post.keywords %}
+        <div class="project-card__tags">
+          {% if post.card_tags %}
+            {% assign card_kws = post.card_tags | split: ',' %}
+            {% for kw in card_kws limit: 4 %}
+              {% assign clean_kw = kw | strip %}
+              {% if clean_kw != '' %}
+                <span class="project-card__tag project-card__tag--keyword">{{ clean_kw }}</span>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% assign prlangs = post.prlang | split: ',' %}
+            {% for lang in prlangs limit: 2 %}
+              {% assign clean_lang = lang | strip %}
+              {% if clean_lang != '' %}
+                <span class="project-card__tag">{{ clean_lang }}</span>
+              {% endif %}
+            {% endfor %}
+
+            {% if post.keywords %}
+              {% assign kws = post.keywords | split: ',' %}
+              {% for kw in kws limit: 2 %}
+                {% assign clean_kw = kw | strip %}
+                {% if clean_kw != '' %}
+                  <span class="project-card__tag project-card__tag--keyword">{{ clean_kw }}</span>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        </div>
       {% endif %}
-      <p class="project-card__links">
-        {% if post.github %}
-          <a class="project-card__icon" href="{{ post.github }}"><i class="fab fa-fw fa-github fa-2x"></i></a>
-        {% endif %}
-        {% if post.paper %}
-          <a class="project-card__icon" href="{{ post.paper }}"><i class="fas fa-fw fa-file fa-2x"></i></a>
-        {% endif %}
-      </p>
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="read-more-button">Read More</a>
+      <span class="project-card__search-index" aria-hidden="true">
+        {{ post.prlang }} {{ post.card_tags }} {{ post.keywords }} {{ post.content | markdownify | strip_html | strip_newlines }}
+      </span>
+      <div class="project-card__bottom-row">
+        <p class="project-card__links">
+          {% if post.github %}
+            <a class="project-card__icon" href="{{ post.github }}"><i class="fab fa-fw fa-github fa-2x"></i></a>
+          {% endif %}
+          {% if post.paper %}
+            <a class="project-card__icon" href="{{ post.paper }}"><i class="fas fa-fw fa-file fa-2x"></i></a>
+          {% endif %}
+        </p>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="read-more-button">Read More</a>
+      </div>
     </div>
   </article>
 </div>
