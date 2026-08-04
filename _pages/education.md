@@ -4,57 +4,145 @@ title: "Education"
 permalink: /education/
 author_profile: true
 ---
-
 <style>
-    table {
-        width: 100%;
-        font-size: 20px;
-        font-weight: bold;
-        background-color: $light-gray;
-    }
+  .education-intro {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
 
-    table tbody tr td:nth-child(1){width:25%;}
-    table tbody tr td:nth-child(2){width:50%;}
-    table tbody tr td:nth-child(3){width:25%;}
+  .education-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
 
+  .education-card {
+    border: 1px solid #e6eaed;
+    border-radius: 12px;
+    background: #f7f9fa;
+    padding: 1.1rem 1.2rem;
+  }
+
+  .education-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+  }
+
+  .education-card__degree {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .education-card__dates {
+    font-size: 0.95rem;
+    color: #666;
+    white-space: nowrap;
+  }
+
+  .education-card__school {
+    margin: 0.15rem 0 0;
+    color: #444;
+  }
+
+  .education-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.9rem 0;
+  }
+
+  .education-card__pill {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid #d7dde1;
+    background: #fff;
+    font-size: 0.88rem;
+    color: #444;
+  }
+
+  .education-card h4 {
+    margin: 0.8rem 0 0.35rem;
+    font-size: 1rem;
+  }
+
+  .education-card p:last-child {
+    margin-bottom: 0;
+  }
 </style>
 
+<p class="education-intro">
+My formal training is in telecommunication engineering, with graduate research that increasingly focused on machine learning, signal processing, and computational neuroscience.
+</p>
 
-| PhD   | University of Tehran       | 2016 - 2024 |
+<div class="education-list">
+  <section class="education-card">
+    <div class="education-card__header">
+      <div>
+        <h3 class="education-card__degree">Ph.D. in Telecommunication Engineering</h3>
+        <p class="education-card__school">University of Tehran</p>
+      </div>
+      <div class="education-card__dates">2016 – 2024</div>
+    </div>
 
+    <div class="education-card__meta">
+      <span class="education-card__pill">GPA: 17.74 / 20</span>
+      <span class="education-card__pill">Computational Neuroscience</span>
+      <span class="education-card__pill">Electrophysiology</span>
+    </div>
 
-<h3>
-Telecommunication Engineering
-</h3>
+    <h4>Thesis</h4>
+    <p><strong>Neural Correlates of Spatial Frequency Representation of Objects in the Primate Visual System</strong></p>
+    <p>
+      This work studied how spatial frequency information is represented in the primate visual system, particularly in the inferior temporal cortex. Using extracellular recordings from macaque monkeys, I investigated how coarse and fine visual information contribute to object representation and category coding in higher visual areas.
+    </p>
+  </section>
 
-<h3>
-GPA: 17.74
-</h3>
+  <section class="education-card">
+    <div class="education-card__header">
+      <div>
+        <h3 class="education-card__degree">M.Sc. in Telecommunication Engineering</h3>
+        <p class="education-card__school">University of Tehran</p>
+      </div>
+      <div class="education-card__dates">2014 – 2016</div>
+    </div>
 
-<h3>Thesis: Neural Correlates of Spatial Frequency Representation of Objects in the Primate Visual System</h3>
-Spatial frequency (SF) is shown to be a critical characteristic in object perception. However, there exists a lack of understanding of how the SF is represented in the brain, specifically in higher areas in the visual system hierarchy. To address this issue, we conducted extracellular recordings from macaque monkeys to investigate the representation of SF in the inferior temporal (IT) cortex. Furthermore, we investigated the impact of SF on complex object representation.
+    <div class="education-card__meta">
+      <span class="education-card__pill">GPA: 17.18 / 20</span>
+      <span class="education-card__pill">Machine Learning</span>
+      <span class="education-card__pill">Pattern Recognition</span>
+    </div>
 
-| M.Sc. | University of Tehran       | 2014 - 2016 |
+    <h4>Thesis</h4>
+    <p><strong>Combination of Classifiers Based on Information Theoretic Models</strong></p>
+    <p>
+      This thesis addressed classifier selection in ensemble learning using an information-theoretic framework. The proposed method considered both the magnitude and distribution of errors to select a smaller and more effective subset of classifiers, and it was later applied to steganalysis with improved accuracy and faster prediction.
+    </p>
+  </section>
 
-<h3>
-Telecommunication Engineering
-</h3>
+  <section class="education-card">
+    <div class="education-card__header">
+      <div>
+        <h3 class="education-card__degree">B.Sc. in Telecommunication Engineering</h3>
+        <p class="education-card__school">Shahid Beheshti University</p>
+      </div>
+      <div class="education-card__dates">2010 – 2014</div>
+    </div>
 
-<h3>
-GPA: 17.18
-</h3>
+    <div class="education-card__meta">
+      <span class="education-card__pill">GPA: 18.25 / 20</span>
+      <span class="education-card__pill">Computer Vision</span>
+      <span class="education-card__pill">Image Processing</span>
+    </div>
 
-<h3>Thesis: Combination of Classifiers Based on Information Theoretic Models</h3>
-One of the widely used methods to construct an accurate classifier is employing an ensemble of classifiers and making a decision based on their outputs of them. The question is: “Should we use all the classifiers to make a decision?” We try to answer this question in this study. In the literature on pattern recognition, this problem is known as “classifier selection”. First, a criterion for the selection of appropriate classifiers is introduced. To introduce the criterion, an information-theoretic framework is chosen. The criterion utilizes the error distribution as well as the value of the error. In fact, employing the error distribution is the novelty of our proposed method. In addition to decreasing the value of the error, the proposed method tries to select a subset of classifiers that has an error distribution close to the desired one. Results show that there exists a trade-off between the value of the error and its distribution. That means, making the error distribution close to the desired distribution, results in the increment of the error. However, this increment is negligible, when the training dataset is small. Next, we employ this idea in steganalysis. We employ the proposed classifier selection algorithm in this problem. The proposed method has a lower error rate and a smaller number of classifiers compared to the prior works. Furthermore, the dimension of the training samples of each classifier is reduced. Finally, the proposed method is much faster in predicting the observations.
-
-| B.Sc.   | Shahid Beheshti University | 2010 - 2014 |
-
-<h3>
-Telecommunication Engineering
-</h3>
-
-<h3>
-GPA: 18.25
-</h3>
-
-<h3>Thesis: Text Detection in The Wild</h3>
+    <h4>Thesis</h4>
+    <p><strong>Text Detection in the Wild</strong></p>
+    <p>
+      My undergraduate thesis focused on detecting text in natural scene images, introducing me to computer vision, image processing, and real-world visual recognition problems under unconstrained conditions.
+    </p>
+  </section>
+</div>
