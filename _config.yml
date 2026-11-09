@@ -11,7 +11,7 @@ title                    : "Ramin Toosi"
 title_separator          : "-"
 name                     : &name "Ramin Toosi"
 description              : &description "Ramin Toosi — ML engineer and researcher in computer vision, deep learning, radar sensing, and computational neuroscience."
-url                      : https://ramintoosi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ramintoosi.ir # custom domain (CNAME); use this for canonicals + sitemap
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ramintoosi/ramintoosi.github.io"
 teaser                   : "ramintoosi.jpg"  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

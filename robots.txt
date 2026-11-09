@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ramintoosi.github.io/sitemap.xml
+Sitemap: https://ramintoosi.ir/sitemap.xml
