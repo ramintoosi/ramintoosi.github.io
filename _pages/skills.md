@@ -3,6 +3,7 @@ layout: archive
 title: "Skills"
 permalink: /skills/
 author_profile: true
+excerpt: "Machine learning, deep learning, computer vision, LLMs, MLOps, and research skills of Ramin Toosi."
 ---
 <style>
   .skills-intro {

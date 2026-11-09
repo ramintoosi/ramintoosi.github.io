@@ -3,6 +3,7 @@ layout: archive
 title: "Education"
 permalink: /education/
 author_profile: true
+excerpt: "Education background of Ramin Toosi — Ph.D., M.Sc., and B.Sc. in telecommunication engineering."
 ---
 <style>
   .education-intro {

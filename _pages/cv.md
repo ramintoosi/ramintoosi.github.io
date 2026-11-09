@@ -3,6 +3,7 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+excerpt: "Curriculum vitae and publication list for Ramin Toosi, machine learning engineer and researcher."
 redirect_from:
   - /resume
 ---

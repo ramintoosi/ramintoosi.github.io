@@ -10,11 +10,11 @@ locale                   : "en-US"
 title                    : "Ramin Toosi"
 title_separator          : "-"
 name                     : &name "Ramin Toosi"
-description              : &description "Machine Learning Engineer"
+description              : &description "Ramin Toosi — ML engineer and researcher in computer vision, deep learning, radar sensing, and computational neuroscience."
 url                      : https://ramintoosi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ramintoosi/ramintoosi.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "ramintoosi.jpg"  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : false
@@ -62,13 +62,18 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "ramintoosi.jpg"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Ramin Toosi"
+  links:
+    - "https://scholar.google.com/citations?user=KzOjvNEAAAAJ&hl=en"
+    - "https://github.com/ramintoosi"
+    - "https://www.linkedin.com/in/ramin-toosi"
+    - "https://orcid.org/0000-0002-7099-9353"
+    - "https://www.researchgate.net/profile/Ramin-Toosi"
 
 
 # Analytics
@@ -87,7 +92,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=KzOjvNEAAAAJ&hl=en"
-  email            : "ramin.tsi@gamil.com"
+  email            : "ramin.tsi@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Ramin-Toosi"
   uri              :
   bitbucket        :
@@ -103,7 +108,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "ramin-toosi"
-  orcid            : 
+  orcid            : "https://orcid.org/0000-0002-7099-9353"
   pinterest        :
   soundcloud       :
   stackoverflow    : 
@@ -122,6 +127,7 @@ include:
   - .htaccess
   - _pages
   - files
+  - robots.txt
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

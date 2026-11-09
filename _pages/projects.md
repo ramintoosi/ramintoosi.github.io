@@ -3,6 +3,7 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+excerpt: "Selected machine learning, computer vision, Rust systems, and research software projects by Ramin Toosi."
 ---
 <div class="projects-search">
   <input

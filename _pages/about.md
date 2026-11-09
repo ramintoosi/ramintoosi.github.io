@@ -2,7 +2,7 @@
 permalink: /
 
 title: "About Me"
-excerpt: "About me"
+excerpt: "Ramin Toosi — Ph.D. in Communications Systems. ML engineer and researcher in computer vision, deep learning, radar sensing, and computational neuroscience."
 author_profile: true
 redirect_from: 
   - /about/
